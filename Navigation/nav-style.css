@@ -5,23 +5,23 @@
   font-family: "Open Sans", sans-serif;
 }
 
-header {
+nav header {
   height: 90px;
   background: #2f3640;
 }
 
-.inner-width {
+nav .inner-width {
   max-width: 1000px;
   padding: 0 10px;
   margin: auto;
 }
 
-.logo {
+nav .logo {
   float: left;
   padding: 20px 0;
 }
 
-.logo img {
+nav .logo img {
   height: 50px;
 }
 
@@ -96,7 +96,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .menu-toggle-btn {
     display: block !important;
     float:right;

@@ -1,25 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Navigation/nav-style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <!-- Plugins -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Navigation/nav-style.css" />
+    <link rel="stylesheet" href="./css/gallery-style.css">
+
+    <!-- Custom JS -->
+    <script src="./js/main.js" type="text/javascript" defer></script>
+    <script src="./js/gallery.js" type="text/javascript" defer></script>
 </head>
 
 <body>
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
 
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("./Navigation/nav.html");
-        });
-    </script>
-    <!--end of Navigation bar-->
+    <div class="gallery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="study">My Study</li>
+            <li class="buttons" data-filter="city">My City</li>
+            <li class="buttons" data-filter="home">My Home</li>
+            <li class="buttons" data-filter="dog">My Dog</li>
+            <li class="buttons" data-filter="cat">My Cats</li>
+        </ul>
+
+        <div class="image-container">
+            <a href="./img/programming_01.jpg" class="image study">
+                <img src="./img/programming_01.jpg" alt="">
+            </a>
+            <a href="./img/programming_02.jpg" class="image study">
+                <img src="./img/programming_02.jpg" alt="">
+            </a>
+            <a href="./img/programming_03.jpg" class="image study">
+                <img src="./img/programming_03.jpg" alt="">
+            </a>
+            <a href="./img/programming_04.jpg" class="image study">
+                <img src="./img/programming_04.jpg" alt="">
+            </a>
+            <a href="./img/programming_05.jpg" class="image study">
+                <img src="./img/programming_05.jpg" alt="">
+            </a>
+            <a href="./img/programming_06.jpg" class="image study">
+                <img src="./img/programming_06.jpg" alt="">
+            </a>
+            <a href="./img/sofia_01.jpg" class="image city">
+                <img src="./img/sofia_01.jpg" alt="">
+            </a>
+            <a href="./img/sofia_02.jpg" class="image city">
+                <img src="./img/sofia_02.jpg" alt="">
+            </a>
+            <a href="./img/sofia_03.jpg" class="image city">
+                <img src="./img/sofia_03.jpg" alt="">
+            </a>
+            <a href="./img/house_01.jpg" class="image home">
+                <img src="./img/house_01.jpg" alt="">
+            </a>
+            <a href="./img/house_02.jpg" class="image home">
+                <img src="./img/house_02.jpg" alt="">
+            </a>
+            <a href="./img/house_03.jpg" class="image home">
+                <img src="./img/house_03.jpg" alt="">
+            </a>
+            <a href="./img/doggo_01.jpg" class="image dog">
+                <img src="./img/doggo_01.jpg" alt="">
+            </a>
+            <a href="./img/doggo_02.jpg" class="image dog">
+                <img src="./img/doggo_02.jpg" alt="">
+            </a>
+            <a href="./img/doggo_03.jpg" class="image dog">
+                <img src="./img/doggo_03.jpg" alt="">
+            </a>
+            <a href="./img/cat_01.jpg" class="image cat">
+                <img src="./img/cat_01.jpg" alt="">
+            </a>
+            <a href="./img/cat_02.jpg" class="image cat">
+                <img src="./img/cat_02.jpg" alt="">
+            </a>
+            <a href="./img/cat_03.jpg" class="image cat">
+                <img src="./img/cat_03.jpg" alt="">
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
