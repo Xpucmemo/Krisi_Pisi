@@ -1,0 +1,21 @@
+*{
+    font-family: Arial;
+    color:#2f3640;
+    text-transform: capitalize;
+}
+
+.downloadanble{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+a:hover {
+    color: red;
+    text-transform: uppercase;
+  }
+
