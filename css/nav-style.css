@@ -5,11 +5,20 @@
   font-family: "Open Sans", sans-serif;
   /* background: #eee; */
 }
+
 body{
   background: #eee;
 }
 
-nav header {
+/* Keeps the footer at the bottom of the page */
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
   height: 90px;
   background: #2f3640;
 }
@@ -30,9 +39,6 @@ nav .logo img {
 }
 
 .navigation-menu {
-  /* float: right; */
-  /* display: flex; */
-  /* align-items: center; */
   min-height: 90px;
   text-align: center;
 }
@@ -48,6 +54,13 @@ nav .logo img {
   margin-top: 29px;
 }
 
+/* Icon sizes */
+.navigation-menu i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Button Text styles */
 .navigation-menu a {
   margin-left: 10px;
   color: #ddd;
@@ -63,11 +76,6 @@ nav .logo img {
   background: #fff;
   color: #2f3640;
   transform: scale(1.1);
-}
-
-.navigation-menu i {
-  margin-right: 8px;
-  font-size: 16px;
 }
 
 .home {
@@ -90,6 +98,11 @@ nav .logo img {
   color: #1dd1a1;
 }
 
+.currentp{
+  background: #fff;
+  color: #2f3640;
+}
+
 .menu-toggle-btn {
   /* float: right; */
   height: 90px;
@@ -105,6 +118,15 @@ nav .logo img {
 .footer {
   background:rgb(200, 200, 200);
   text-align: center;
+  margin-top: auto;
+}
+
+footer .margins {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: medium;
 }
 
 .sitemap {
@@ -126,11 +148,6 @@ nav .logo img {
   border-radius: 4px;
   transition: 0.3s linear;
   display: block;
-}
-
-footer .margins {
-  margin-left: 7%;
-  margin-right: 7%;
 }
 
 .sitemap a:hover {
@@ -194,6 +211,7 @@ footer .margins {
     /* color: transparent; */
     /* padding: 1vw; */
  }
+
  .sitemap i {
    margin-right: 0;
    font-size: x-large;

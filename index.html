@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="img/kkk.png" type="image/icon type">
 
   <!-- Plugins -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
@@ -12,66 +13,141 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/index-style.css" />
   <link rel="stylesheet" href="./css/nav-style.css" />
+
 
   <!-- Custom JS -->
   <script src="./js/main.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-  <nav>
+  <div class="flex-wrapper">
     <header>
-      <div class="inner-width">
-        <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-        <i class="menu-toggle-btn fas fa-bars"></i>
-        <div class="navigation-menu">
-          <ul class="#">
-            <li>
-              <a href="./index.html"><i class="fas fa-home home"></i> Home</a>
-            </li>
-            <li>
-              <a href="./gallery.html"><i class="fas fa-images"></i> Gallery</a>
-            </li>
-            <li>
-              <a href="./download.html"><i class="fab fa-buffer works"></i> Download</a>
-            </li>
-            <li>
-              <a href="./forum.html"><i class="fas fa-users team"></i> Forum</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
-            </li>
-          </ul>
+      <nav>
+        <div class="inner-width">
+          <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+          <i class="menu-toggle-btn fas fa-bars"></i>
+          <div class="navigation-menu">
+            <ul class="#">
+              <li>
+                <a href="./index.html" class="currentp"><i class="fas fa-home home"></i> Home</a>
+              </li>
+              <li>
+                <a href="./gallery.html"><i class="fas fa-images"></i> Gallery</a>
+              </li>
+              <li>
+                <a href="./download.html"><i class="fab fa-buffer works"></i> Download</a>
+              </li>
+              <li>
+                <a href="./forum.html"><i class="fas fa-users team"></i> Forum</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-  </nav>
-  <footer class="footer">
-    <hr>
-    <div class="sitemap margins">
-      <ul class="#">
-        <li>
-          <a href="./index.html"><i class="fas fa-home home"></i>Home</a>
-        </li>
-        <li>
-          <a href="./gallery.html"><i class="fas fa-images"></i>Gallery</a>
-        </li>
-        <li>
-          <a href="./download.html"><i class="fab fa-buffer works"></i>Download</a>
-        </li>
-        <li>
-          <a href="./forum.html"><i class="fas fa-users team"></i>Forum</a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
-        </li>
-      </ul>
+    <div class="content">
+      <!-- Profile section -->
+      <section class="profile" id="profile">
+
+        <div class="image">
+          <img src="img/mainphoto.jpg" alt="">
+        </div>
+
+        <div class="introduction">
+          <h3> KRISTINA KRASTANOVA</h3>
+          <p>IT student</p>
+        </div>
+
+      </section>
+
+      <!-- About section-->
+      <section class="about" id="about">
+
+        <h1 class="heading"> about <span>me</span> </h1>
+
+        <div class="row">
+
+          <div class="box">
+            <h3 class="title">Soft skills</h3>
+            <ul class="skills">
+              <li>Communication</li>
+              <li>Teamwork</li>
+              <li>Creativity</li>
+              <li>Time management</li>
+              <li>Problem-solving skills</li>
+              <li>Work ethics</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3 class="title">Digital skills</h3>
+            <ul class="skills">
+              <li>C++</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub</li>
+              <li>OOP principles</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3 class="title">experience</h3>
+            <div class="exp-box">
+              <h3>Technical Assistant </h3>
+              <p>Raw Management and Logistic Ltd <br>10/2019 – 09/2020</p>
+            </div>
+            <div class="exp-box">
+              <h3>Promoter</h3>
+              <p>She Promotions Ltd <br>03/2016 – 10/2021</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3 class="title">education</h3>
+            <div class="exp-box">
+              <h3>Bachelor’s degree in Information Technology</h3>
+              <p>New Bulgarian University <br>10/2019 – 07/2023</p>
+            </div>
+            <div class="exp-box">
+              <h3>High school</h3>
+              <p>First English Language School <br>09/2014 – 05/2019</p>
+            </div>
+          </div>
+        </div>
     </div>
-    <hr>
-    <div class="margins">Copyright © 2021 Kristina Krastanova. All Rights Reserved.</div>
-    <div class="margins">This site is for personal use and portfolio representation. KrisiPisi® is a registered
-      trademark.</div>
-  </footer>
+    <footer class="footer">
+      <hr size="3" , color=grey>
+      <div class="sitemap margins">
+        <ul class="#">
+          <li>
+            <a href="./index.html"><i class="fas fa-home home"></i>Home</a>
+          </li>
+          <li>
+            <a href="./gallery.html"><i class="fas fa-images"></i>Gallery</a>
+          </li>
+          <li>
+            <a href="./download.html"><i class="fab fa-buffer works"></i>Download</a>
+          </li>
+          <li>
+            <a href="./forum.html"><i class="fas fa-users team"></i>Forum</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <hr size="3" , color=grey>
+      <div class="margins">Copyright © 2021 Kristina Krastanova. All Rights Reserved.</div>
+      <div class="margins">This site is for personal use and portfolio representation. KrisiPisi® is a registered
+        trademark.</div>
+      <hr size="3" , color=grey>
+    </footer>
 </body>
 
 </html>

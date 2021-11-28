@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="icon" href="img/kkk.png" type="image/icon type">
+
     <!-- Plugins -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
@@ -21,128 +23,130 @@
 </head>
 
 <body>
-    <nav>
+    <div class="flex-wrapper">
         <header>
-            <div class="inner-width">
-                <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-                <i class="menu-toggle-btn fas fa-bars"></i>
-                <div class="navigation-menu">
-                    <ul class="#">
-                        <li>
-                            <a href="./index.html"><i class="fas fa-home home"></i> Home</a>
-                        </li>
-                        <li>
-                            <a href="./gallery.html"><i class="fas fa-images"></i> Gallery</a>
-                        </li>
-                        <li>
-                            <a href="./download.html"><i class="fab fa-buffer works"></i> Download</a>
-                        </li>
-                        <li>
-                            <a href="./forum.html"><i class="fas fa-users team"></i> Forum</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
-                        </li>
-                    </ul>
+            <nav>
+                <div class="inner-width">
+                    <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+                    <i class="menu-toggle-btn fas fa-bars"></i>
+                    <div class="navigation-menu">
+                        <ul class="#">
+                            <li>
+                                <a href="./index.html"><i class="fas fa-home home"></i> Home</a>
+                            </li>
+                            <li>
+                                <a href="./gallery.html" class="currentp"><i class="fas fa-images"></i> Gallery</a>
+                            </li>
+                            <li>
+                                <a href="./download.html"><i class="fab fa-buffer works"></i> Download</a>
+                            </li>
+                            <li>
+                                <a href="./forum.html"><i class="fas fa-users team"></i> Forum</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </header>
-    </nav>
-
-    <div class="gallery">
-        <ul class="controls">
-            <li class="buttons active" data-filter="all">all</li>
-            <li class="buttons" data-filter="study">My Study</li>
-            <li class="buttons" data-filter="city">My City</li>
-            <li class="buttons" data-filter="home">My Home</li>
-            <li class="buttons" data-filter="dog">My Dog</li>
-            <li class="buttons" data-filter="cat">My Cats</li>
-        </ul>
-
-        <div class="image-container">
-            <a href="./img/programming_01.jpg" class="image study">
-                <img src="./img/programming_01.jpg" alt="">
-            </a>
-            <a href="./img/programming_02.jpg" class="image study">
-                <img src="./img/programming_02.jpg" alt="">
-            </a>
-            <a href="./img/programming_03.jpg" class="image study">
-                <img src="./img/programming_03.jpg" alt="">
-            </a>
-            <a href="./img/programming_04.jpg" class="image study">
-                <img src="./img/programming_04.jpg" alt="">
-            </a>
-            <a href="./img/programming_05.jpg" class="image study">
-                <img src="./img/programming_05.jpg" alt="">
-            </a>
-            <a href="./img/programming_06.jpg" class="image study">
-                <img src="./img/programming_06.jpg" alt="">
-            </a>
-            <a href="./img/sofia_01.jpg" class="image city">
-                <img src="./img/sofia_01.jpg" alt="">
-            </a>
-            <a href="./img/sofia_02.jpg" class="image city">
-                <img src="./img/sofia_02.jpg" alt="">
-            </a>
-            <a href="./img/sofia_03.jpg" class="image city">
-                <img src="./img/sofia_03.jpg" alt="">
-            </a>
-            <a href="./img/house_01.jpg" class="image home">
-                <img src="./img/house_01.jpg" alt="">
-            </a>
-            <a href="./img/house_02.jpg" class="image home">
-                <img src="./img/house_02.jpg" alt="">
-            </a>
-            <a href="./img/house_03.jpg" class="image home">
-                <img src="./img/house_03.jpg" alt="">
-            </a>
-            <a href="./img/doggo_01.jpg" class="image dog">
-                <img src="./img/doggo_01.jpg" alt="">
-            </a>
-            <a href="./img/doggo_02.jpg" class="image dog">
-                <img src="./img/doggo_02.jpg" alt="">
-            </a>
-            <a href="./img/doggo_03.jpg" class="image dog">
-                <img src="./img/doggo_03.jpg" alt="">
-            </a>
-            <a href="./img/cat_01.jpg" class="image cat">
-                <img src="./img/cat_01.jpg" alt="">
-            </a>
-            <a href="./img/cat_02.jpg" class="image cat">
-                <img src="./img/cat_02.jpg" alt="">
-            </a>
-            <a href="./img/cat_03.jpg" class="image cat">
-                <img src="./img/cat_03.jpg" alt="">
-            </a>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <hr>
-        <div class="sitemap margins">
-            <ul class="#">
-                <li>
-                    <a href="./index.html"><i class="fas fa-home home"></i>Home</a>
-                </li>
-                <li>
-                    <a href="./gallery.html"><i class="fas fa-images"></i>Gallery</a>
-                </li>
-                <li>
-                    <a href="./download.html"><i class="fab fa-buffer works"></i>Download</a>
-                </li>
-                <li>
-                    <a href="./forum.html"><i class="fas fa-users team"></i>Forum</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
-                </li>
+        <div class="content gallery">
+            <ul class="controls">
+                <li class="buttons active" data-filter="all">all</li>
+                <li class="buttons" data-filter="study">My Study</li>
+                <li class="buttons" data-filter="city">My City</li>
+                <li class="buttons" data-filter="home">My Home</li>
+                <li class="buttons" data-filter="dog">My Dog</li>
+                <li class="buttons" data-filter="cat">My Cats</li>
             </ul>
+
+            <div class="image-container">
+                <a href="./img/programming_01.jpg" class="image study">
+                    <img src="./img/programming_01.jpg" alt="">
+                </a>
+                <a href="./img/programming_02.jpg" class="image study">
+                    <img src="./img/programming_02.jpg" alt="">
+                </a>
+                <a href="./img/programming_03.jpg" class="image study">
+                    <img src="./img/programming_03.jpg" alt="">
+                </a>
+                <a href="./img/programming_04.jpg" class="image study">
+                    <img src="./img/programming_04.jpg" alt="">
+                </a>
+                <a href="./img/programming_05.jpg" class="image study">
+                    <img src="./img/programming_05.jpg" alt="">
+                </a>
+                <a href="./img/programming_06.jpg" class="image study">
+                    <img src="./img/programming_06.jpg" alt="">
+                </a>
+                <a href="./img/sofia_01.jpg" class="image city">
+                    <img src="./img/sofia_01.jpg" alt="">
+                </a>
+                <a href="./img/sofia_02.jpg" class="image city">
+                    <img src="./img/sofia_02.jpg" alt="">
+                </a>
+                <a href="./img/sofia_03.jpg" class="image city">
+                    <img src="./img/sofia_03.jpg" alt="">
+                </a>
+                <a href="./img/house_01.jpg" class="image home">
+                    <img src="./img/house_01.jpg" alt="">
+                </a>
+                <a href="./img/house_02.jpg" class="image home">
+                    <img src="./img/house_02.jpg" alt="">
+                </a>
+                <a href="./img/house_03.jpg" class="image home">
+                    <img src="./img/house_03.jpg" alt="">
+                </a>
+                <a href="./img/doggo_01.jpg" class="image dog">
+                    <img src="./img/doggo_01.jpg" alt="">
+                </a>
+                <a href="./img/doggo_02.jpg" class="image dog">
+                    <img src="./img/doggo_02.jpg" alt="">
+                </a>
+                <a href="./img/doggo_03.jpg" class="image dog">
+                    <img src="./img/doggo_03.jpg" alt="">
+                </a>
+                <a href="./img/cat_01.jpg" class="image cat">
+                    <img src="./img/cat_01.jpg" alt="">
+                </a>
+                <a href="./img/cat_02.jpg" class="image cat">
+                    <img src="./img/cat_02.jpg" alt="">
+                </a>
+                <a href="./img/cat_03.jpg" class="image cat">
+                    <img src="./img/cat_03.jpg" alt="">
+                </a>
+            </div>
         </div>
-        <hr>
-        <div class="margins">Copyright © 2021 Kristina Krastanova. All Rights Reserved.</div>
-        <div class="margins">This site is for personal use and portfolio representation. KrisiPisi® is a registered
-            trademark.</div>
-    </footer>
+
+        <footer class="footer">
+            <hr size="3" , color=grey>
+            <div class="sitemap margins">
+                <ul class="#">
+                    <li>
+                        <a href="./index.html"><i class="fas fa-home home"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="./gallery.html"><i class="fas fa-images"></i>Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./download.html"><i class="fab fa-buffer works"></i>Download</a>
+                    </li>
+                    <li>
+                        <a href="./forum.html"><i class="fas fa-users team"></i>Forum</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr size="3" , color=grey>
+            <div class="margins">Copyright © 2021 Kristina Krastanova. All Rights Reserved.</div>
+            <div class="margins">This site is for personal use and portfolio representation. KrisiPisi® is a registered
+                trademark.</div>
+            <hr size="3" , color=grey>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -1,11 +1,19 @@
-*{
-    font-family: Arial;
+body{
+    background:#eee;
+}
+
+h1,p{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color:#2f3640;
-    text-transform: capitalize;
 }
 
 .downloadanble{
     width: 100%;
+    margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -14,8 +22,33 @@
     align-content: center;
 }
 
-a:hover {
+.cvdw{
+    font-family: Arial;
+    color:#2f3640;
+    text-transform: capitalize;
+}
+
+.cvdw:hover {
     color: red;
     text-transform: uppercase;
-  }
+}
+
+.gtp{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.gtlink{
+    color: red;
+}
+
+.gtlink:hover{
+    text-decoration: underline;
+}
+
 

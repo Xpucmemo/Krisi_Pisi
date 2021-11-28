@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Download</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download</title>
+  <link rel="icon" href="img/kkk.png" type="image/icon type">
 
   <!-- Plugins -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
@@ -20,68 +21,83 @@
 </head>
 
 <body>
-  <nav>
+  <div class="flex-wrapper">
     <header>
-      <div class="inner-width">
-        <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-        <i class="menu-toggle-btn fas fa-bars"></i>
-        <div class="navigation-menu">
-          <ul class="#">
-            <li>
-              <a href="./index.html"><i class="fas fa-home home"></i> Home</a>
-            </li>
-            <li>
-              <a href="./gallery.html"><i class="fas fa-images"></i> Gallery</a>
-            </li>
-            <li>
-              <a href="./download.html"><i class="fab fa-buffer works"></i> Download</a>
-            </li>
-            <li>
-              <a href="./forum.html"><i class="fas fa-users team"></i> Forum</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
-            </li>
-          </ul>
+      <nav>
+        <div class="inner-width">
+          <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+          <i class="menu-toggle-btn fas fa-bars"></i>
+          <div class="navigation-menu">
+            <ul class="#">
+              <li>
+                <a href="./index.html"><i class="fas fa-home home"></i> Home</a>
+              </li>
+              <li>
+                <a href="./gallery.html"><i class="fas fa-images"></i> Gallery</a>
+              </li>
+              <li>
+                <a href="./download.html" class="currentp"><i class="fab fa-buffer works"></i> Download</a>
+              </li>
+              <li>
+                <a href="./forum.html"><i class="fas fa-users team"></i> Forum</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-  </nav>
 
+    <div class="content">
+      <h1>Would you like to check out my CV?</h1>
+      <p>Feel free to download it by clicking the file type below which you prefer:</p>
 
-  <div class="downloadanble">
-    <a href="files/CV_Kristina_Krastanova.pdf" download><img src="img/pdf.png"
-        style="width:200px;height:200px;">download CV in PDF</a>
-    <a href="files/CV_Kristina_Krastanova.docx" download><img src="img/doc.png"
-        style="width:200px;height:200px;">download CV in word</a>
-  </div>
+      <div class="downloadanble">
+        <a class="cvdw" href="files/CV_Kristina_Krastanova.pdf" download><img src="img/pdf.png"
+            style="width:150px;height:200px;">
+          <figcaption> download CV in PDF</figcaption>
+        </a>
+        <a class="cvdw" href="files/CV_Kristina_Krastanova.docx" download><img src="img/doc.png"
+            style="width:150px;height:200px;">
+          <figcaption> download CV in word</figcaption>
+        </a>
+      </div>
 
-  <footer class="footer">
-    <hr>
-    <div class="sitemap margins">
-      <ul class="#">
-        <li>
-          <a href="./index.html"><i class="fas fa-home home"></i>Home</a>
-        </li>
-        <li>
-          <a href="./gallery.html"><i class="fas fa-images"></i>Gallery</a>
-        </li>
-        <li>
-          <a href="./download.html"><i class="fab fa-buffer works"></i>Download</a>
-        </li>
-        <li>
-          <a href="./forum.html"><i class="fas fa-users team"></i>Forum</a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
-        </li>
-      </ul>
+      <p class="gtp">Are you interested in checking out my project? Click <a class="gtlink"
+          href=https://github.com/KristinaKrastanova> &nbsp;here&nbsp; </a> to visit my public GitHub repositories.</p>
+
     </div>
-    <hr>
-    <div class="margins">Copyright © 2021 Kristina Krastanova. All Rights Reserved.</div>
-    <div class="margins">This site is for personal use and portfolio representation. KrisiPisi® is a registered
-      trademark.</div>
-  </footer>
+
+    <footer class="footer">
+      <hr size="3" , color=grey>
+      <div class="sitemap margins">
+        <ul class="#">
+          <li>
+            <a href="./index.html"><i class="fas fa-home home"></i>Home</a>
+          </li>
+          <li>
+            <a href="./gallery.html"><i class="fas fa-images"></i>Gallery</a>
+          </li>
+          <li>
+            <a href="./download.html"><i class="fab fa-buffer works"></i>Download</a>
+          </li>
+          <li>
+            <a href="./forum.html"><i class="fas fa-users team"></i>Forum</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <hr size="3" , color=grey>
+      <div class="margins">Copyright © 2021 Kristina Krastanova. All Rights Reserved.</div>
+      <div class="margins">This site is for personal use and portfolio representation. KrisiPisi® is a registered
+        trademark.</div>
+      <hr size="3" , color=grey>
+    </footer>
+  </div>
 </body>
 
 </html>
